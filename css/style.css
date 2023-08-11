@@ -4,68 +4,83 @@
     font-weight: normal;
     font-style: normal;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     width: 1044px;
     margin: 0 auto;
     background-color: black;
 }
-body{
+
+body {
     height: 100vh;
     margin: 0 auto;
     background-color: #F9FAFB;
     display: flex;
     font-weight: bold;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     font-family: 'Helvetica';
 }
-section{
+
+section {
     height: 33.3%;
 }
-body>div{
+
+body>div {
     width: 47%;
 }
-.mid{
+
+.mid {
     background-color: white;
     box-shadow: 0 0 5px lightgray;
 }
-.top{
-    padding:80px 40px 10px 40px;
+
+.top {
+    padding: 80px 40px 10px 40px;
     word-break: keep-all;
 }
-.top > p{
+
+.top>p {
     margin-bottom: 10px;
     width: 500px;
 }
-.top > h3 {
+
+.top>h3 {
     margin-top: 20px;
 }
-.mid,.bot{
+
+.mid,
+.bot {
     padding: 20px 0 0 40px;
 }
 
 /* Form */
-.mid>div{
+.mid>div {
     display: flex;
 }
-div>div{
+
+div>div {
     width: 50%;
 }
-label{
+
+label {
     display: inline-block;
     width: 100%;
     font-size: 0.7rem;
     font-weight: normal;
     margin-top: 15px;
 }
-input{
+
+input {
     border: 1px solid #E5E7EB;
     border-radius: 3px;
     outline: none;
@@ -76,7 +91,7 @@ input{
 }
 
 /* Image */
-div>img{
+div>img {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -84,7 +99,7 @@ div>img{
 }
 
 /* Button */
-button{
+button {
     background-color: #596D48;
     color: white;
     padding: 10px 20px;
@@ -96,26 +111,29 @@ button{
     cursor: pointer;
     box-shadow: 0 0 2.5px gray;
 }
-button:active{
+
+button:active {
     transform: scale(0.9);
 }
-.bot>p{
+
+.bot>p {
     font-size: 0.8rem;
     font-weight: normal;
 }
-.bot span{
+
+.bot span {
     color: #596D48;
     font-weight: bold;
 }
 
 /* Form effects */
-input:focus{
+input:focus {
     border-color: blue;
     box-shadow: 2px 2px 2px lightgray;
 }
 
 
-header{
+header {
     position: absolute;
     left: 50px;
     top: 150px;
@@ -129,14 +147,17 @@ header{
     z-index: 1;
     justify-content: center;
 }
-header img{
+
+header img {
     height: 100px;
     margin-left: 50px;
 }
-header>*{
+
+header>* {
     align-items: center;
 }
-footer{
+
+footer {
     position: absolute;
     left: 300px;
     bottom: 25px;
@@ -145,6 +166,17 @@ footer{
     font-size: 0.6rem;
     font-weight: lighter;
 }
-a{
-    color:white;
+
+a {
+    color: white;
+}
+
+div > span{
+    display: block;
+    font-size: 0.6rem;
+    font-weight: normal;
+    color: red;
+}
+.error{
+    border-color: red;
 }
